@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LiveDev</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">LiveDev</div>
+        <h1>LOGIN</h1>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">SENHA</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite a sua senha" required>
+            </div>
+            
+            <button type="submit" class="login-button">Entrar</button>
+            
+            <div class="register-link">
+                Ainda não tem uma conta?<br>
+                <a href="cadastro.html" id="registerLink">Cadastre-se</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const senha = document.getElementById('senha').value;
+            
+            if (senha.length < 8) {
+                alert('A senha deve ter no mínimo 8 caracteres!');
+                return false;
+            }
+            
+            alert('Login válido! Redirecionando...');
+            window.location.href = "main.html";
+        });
+
+        document.getElementById('registerLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            //alert('Redirecionando para página de cadastro...');
+            window.location.href = "cadastro.html";
+        });
+    </script>
+</body>
+</html>
