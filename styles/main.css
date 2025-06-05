@@ -6,7 +6,7 @@
 }
 
 body {
-    color: #333;
+    color: #100f0f;
     line-height: 1.6;
 }
 
@@ -15,18 +15,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ffffff;
 }
 
 .logo {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .auth-buttons a {
     margin-left: 15px;
     text-decoration: none;
-    color: #333;
+    color: #070707;
 }
 
 .auth-buttons a:hover {
@@ -36,7 +36,7 @@ header {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background:linear-gradient(135deg,#2a71f4,#1976d2);
 }
 
 .hero h1 {
@@ -57,7 +57,7 @@ header {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #007bff;
+    background-color: #211e1e;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -83,7 +83,7 @@ header {
 .about {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background:linear-gradient(135deg,#2a71f4,#1976d2);
 }
 
 .about-content {
@@ -114,7 +114,7 @@ header {
     width: 300px;
     margin: 0 15px 30px;
     padding: 20px;
-    border: 1px solid #eee;
+    border: 1px solid #275cfc;
     border-radius: 5px;
     text-align: left;
 }
@@ -132,8 +132,7 @@ header {
     margin-bottom: 10px;
 }
 
-/* Rodapé Estilizado */
-footer {
+.footer {
     background-color: #f8f9fa;
     color: #333;
     padding: 40px 20px;
@@ -163,20 +162,20 @@ footer {
 }
 
 .footer-section a {
-    color: #6c757d;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section a:hover {
-    color: #007bff;
+    color: #194574;
 }
 
 .copyright {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #e9ecef;
-    color: #6c757d;
+    border-top: 1px solid #1a1d20;
+    color: #000000;
     font-size: 14px;
 }
