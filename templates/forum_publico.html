@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiveDev - Fórum Interno</title>
+    <title>LiveDev - Fórum Público</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" >
     <link rel="stylesheet" href="../styles/forum.css">
 </head>
@@ -15,8 +15,8 @@
       <div>LIVE CODING</div>
       <a href="#">📡 Sessões ao Vivo</a>
       <div>FÓRUNS</div>
-      <a href="#" style="color: #2a6ef0; font-weight: bold;">👥 Fórum Interno</a>
-      <a href="#">🌐 Fórum Público</a>
+      <a href="#">👥 Fórum Interno</a>
+      <a href="#" class="active" style="color: #2a6ef0;">🌐 Fórum Público</a>
       <a href="#">⚙️ Configurações</a>
     </nav>
   </aside>
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="forum-banner">
-      <strong>Fórum Interno - TechCorp</strong><br>
+      <strong>Fórum Público</strong><br>
       Discuta tópicos de programação, compartilhe conhecimento e tire suas dúvidas
     </div>
     <div class="tabs">
@@ -42,32 +42,36 @@
     </div>
 
     <div class="post">
-      <div><span class="author">Leonardo</span><span class="timestamp"> • 21 minutos atrás</span></div>
-      <div class="post-title">Diferenças e semelhanças entre maquinas virtuais do Java e do C sharp</div>
-      <div class="post-text">Ola pessoal, me chamo Leonardo e sou estudante de ciência da computação, este semestre tenho um trabalho onde apresento e comparo as semelhanças e diferenças entre as maquinas virtuais do Java e do C#, gostaria que vocês me ajudassem nessa pesquisa compartilhando oque sabem dobre o assunto aqui, isso me ajudaria muito!</div>
+      <div><span class="author">Zhou</span><span class="timestamp"> • 21 minutos atrás</span></div>
+      <div class="post-title">Qual a melhor abordagem para microserviços em Node.js?</div>
+      <div class="post-text">Olá comunidade! Estou planejando a arquitetura de um novo projeto e gostaria de opiniões sobre a implementação de microserviços usando Node.js. Quais frameworks vocês recomendam e quais são as melhores práticas para comunicação entre serviços?</div>
       <div class="tags">
-        <span>C#</span>
-        <span>Java</span>
+        <span>Node.js</span>
+        <span>Microserviços</span>
+        <span>Arquitetura</span>
       </div>
       <div class="reactions">
-        <div>👍 2</div>
-        <div>💬 1</div>
+        <div>👍 4</div>
+        <div>💬 3</div>
       </div>
     </div>
 
     <div class="post">
-      <div><span class="author">Marcos</span><span class="timestamp"> • 45 minutos atrás</span></div>
+      <div><span class="author">Nagata</span><span class="timestamp"> • 45 minutos atrás</span></div>
       <div class="post-title">Estou com uma dúvida em um código JavaScript</div>
-      <div class="post-text">Olá, pessoal. Estou estudando JavaScript e estou fazendo uma atividade prática, mas estou com um pouco de dificuldade no código. Segue abaixo.<br>var bebida = "café"; ...</div>
+      <div class="post-text">Pessoal, estou com um problema chato no React. Quando tento atualizar o estado usando useState, a interface não reflete as mudanças imediatamente. Alguém já passou por isso?<br>
+        const [count, setCount] = useState(0);<br>
+        setCount(count + 1); // Não atualiza na primeira vez</div>
       <div class="tags">
+        <span>React</span>
         <span>JavaScript</span>
+        <span>Frontend</span>
       </div>
       <div class="reactions">
         <div>👍 9</div>
         <div>💬 4</div>
       </div>
     </div>
-
   </main>
 </body>
 </html>
