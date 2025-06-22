@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    display: flex;
+    background-color: #f7faff;
+    color: #2c2c2c;
+}
+aside {
+    width: 250px;
+    background-color: #f2f4f8;
+    height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+aside h1 {
+    font-size: 26px;
+    color: #2c2c2c;
+}
+aside h1 span {
+    color: #2a6ef0;
+}
+aside nav a {
+    display: block;
+    color: #2c2c2c;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 16px;
+}
+main {
+    flex: 1;
+    padding: 40px;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.search-input {
+    width: 400px;
+    padding: 12px 16px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.forum-banner {
+    background-color: #e6eaf1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.forum-banner strong {
+    color: #2a6ef0;
+}
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.tabs button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+.tabs .active {
+    background-color: #2a6ef0;
+    color: white;
+    border: none;
+}
+.post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+.post .author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.post .timestamp {
+    color: #777;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.post-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.post-text {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 10px;
+}
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.tags span {
+    font-size: 13px;
+    color: #2a6ef0;
+    font-weight: 600;
+}
+.reactions {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #555;
+}
