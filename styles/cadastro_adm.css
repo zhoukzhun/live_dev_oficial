@@ -1,0 +1,67 @@
+body{ font-family: Arial, sans-serif;
+  background:linear-gradient(135deg,#0d47a1,#1976d2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.form-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input, select {
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cidade-estado {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
