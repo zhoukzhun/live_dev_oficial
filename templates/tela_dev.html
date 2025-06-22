@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela Principal do Desenvolvedor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1><span class="blue">Live</span><span class="black">Dev</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#">🏠 Página Inicial</a></li>
+          <li><a href="#">📺 Sessões ao Vivo</a></li>
+          <li><a href="#">💬 Fórum Interno</a></li>
+          <li><a href="#">🌐 Fórum Público</a></li>
+          <li><a href="#">⚙️ Configurações</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <button class="btn">+ Nova Discussão</button>
+        <input type="text" placeholder="🔍 Pesquisar">
+        <div class="profile">
+          <div>
+            <strong>João Silva</strong><br>
+            <span>Desenvolvedor Sênior</span>
+          </div>
+        </div>
+      </header>
+
+      <table class="dashboard">
+        <tr>
+          <td class="live-sessions">
+            <h2>Live Sessions 🔴</h2>
+
+            <div class="card live">
+              <h3>Implementando Clean Architecture em React</h3>
+              <p>👩 Ana Silva - TechCorp</p>
+              <p>🕒 14:00 - 15:30</p>
+              <button class="btn-watch">Assistir Agora (7 assistindo)</button>
+            </div>
+
+            <div class="card">
+              <h3>Debug em Produção: Melhores Práticas</h3>
+              <p>👨 Carlos Oliveira - DevSolutions</p>
+              <p>🕒 16:00 - 17:30</p>
+              <button class="btn-lembrar">Lembrar</button>
+            </div>
+          </td>
+
+          <td class="recent-discussions">
+            <h2>Discussões Recentes</h2>
+            <div class="tab-links">
+              <a href="#" class="active">Internas</a> |
+              <a href="#">Públicas</a>
+            </div>
+
+            <div class="card internal">
+              <h3>Como vocês lidam com cache no React Query?</h3>
+              <p>👨 Pedro Alves - TechCorp • há 2 horas</p>
+              <p>💬 9 respostas • 👍 5 curtidas</p>
+            </div>
+
+            <div class="card public">
+              <h3>Melhores práticas para testes em React</h3>
+              <p>👩 Julia Costa - DevSolutions • há 4 horas</p>
+              <p>💬 12 respostas • 👍 9 curtidas</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
