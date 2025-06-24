@@ -179,3 +179,12 @@ code {
     font-weight: 600; 
     color: #2a6ef0;
 }
+.respostas-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
