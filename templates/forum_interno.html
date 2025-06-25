@@ -1,81 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiveDev - Fórum Interno</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" >
-    <link rel="stylesheet" href="../styles/forum.css">
-</head>
-<body>
-  <aside>
-    <h1><span>Live</span>Dev</h1>
-    <nav>
-      <a href="tela_dev.html">🏠 página inicial</a>
-      <div>LIVE CODING</div>
-      <a href="live.html">📡 Sessões ao Vivo</a>
-      <div>FÓRUNS</div>
-      <a href="forum_interno.html" style="color: #2a6ef0; font-weight: bold;">👥 Fórum Interno</a>
-      <a href="forum_publico.html">🌐 Fórum Público</a>
-    </nav>
-  </aside>
-  <main>
-    <div class="top-bar">
-      <input class="search-input" type="text" placeholder="Pesquisar no fórum...">
-      <div class="user-info">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LiveDev - Fórum Interno</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" >
+      <link rel="stylesheet" href="../styles/forum.css">
+  </head>
+
+  <body>
+
+    <aside>
+      <h1>
+        <span>Live</span>Dev
+      </h1>
+
+      <nav>
+        <a href="tela_dev.html">🏠 página inicial</a>
+
         <div>
-          <div><strong>Luiz</strong></div>
-          <div style="font-size: 14px; color: #555;">Estagiario</div>
+          LIVE CODING
         </div>
-        <img src="../imgs/Luiz.jpg" alt="Avatar">
-      </div>
-    </div>
-    <div class="forum-banner">
-      <strong>Fórum Interno - Sagemcom</strong><br>
-      Discuta tópicos de programação, compartilhe conhecimento e tire suas dúvidas
-    </div>
-    <div class="tabs">
-      <button class="active">📌 Recentes</button>
-      <button>💬 Sem resposta</button>
-      <button>➕ Nova Discussão</button>
-    </div>
 
-    <div class="post">
-      <div><span class="author">
-      <img src="../imgs/Baiano.jpeg" alt="Avatar Baiano">
-      Baiano</span><span class="timestamp"> • 21 minutos atrás</span></div>
-      <div class="post-title">Erro autenticação consumo api javascript fetch</div>
-      <div class="post-text">Eae guys <br><br>
-        Fiz um teste no postman para consumir uma api e deu tudo certo<br>
-        no entanto jogando para o fetch do javascript da erro de autorização 401<br><br>
-        O código que estou usando é esse ficarei muito grato se alguém puder me dar uma luz <br><br>
-        ...</div>
-      <div class="tags">
-      <span>javascript</span>
-      </div>
-      <div class="reactions">
-        <div>👍 9</div>
-        <div>💬 4</div>
-      </div>
-      <a href="forum_interno_comentario.html">
-      <button class="respostas-button">Respostas</button>
-      </a>
-    </div>
+        <a href="live.html">📡 Sessões ao Vivo</a>
 
-    <div class="post">
-      <div><span class="author">
-      <img src="../imgs/Alex.jpeg" alt="Avatar Alex">
-      Alex</span><span class="timestamp"> • 45 minutos atrás</span></div>
-      <div class="post-title">Estou com uma dúvida em um código JavaScript</div>
-      <div class="post-text">Olá, pessoal. Estou estudando JavaScript e estou fazendo uma atividade prática, mas estou com um pouco de dificuldade no código. Segue abaixo.<br>var bebida = "café"; ...</div>
-      <div class="tags">
-        <span>JavaScript</span>
+        <div>
+          FÓRUNS
+        </div>
+
+        <a href="forum_interno.html" style="color: #2a6ef0; font-weight: bold;">
+          👥 Fórum Interno
+        </a>
+        
+        <a href="forum_publico.html">
+          🌐 Fórum Público
+        </a>
+      </nav>   
+
+    </aside>
+
+    <main>
+      <div class="top-bar">
+        <input class="search-input" type="text" placeholder="Pesquisar no fórum...">
+
+        <div class="user-info">
+          <div>    
+            <div>
+              <strong>Luiz</strong>
+            </div>
+            
+            <div style="font-size: 14px; color: #555;">
+              Estagiario
+            </div>
+          </div>
+
+          <img src="../imgs/Luiz.jpg" alt="Avatar">
+        </div>
+
       </div>
-      <div class="reactions">
-        <div>👍 3</div>
-        <div>💬 1</div>
+
+      <div class="forum-banner">
+        <strong>Fórum Interno - Sagemcom</strong><br>
+        Discuta tópicos de programação, compartilhe conhecimento e tire suas dúvidas
       </div>
-    </div>
-  </main>
-</body>
+
+      <div class="tabs">
+        <button class="active">📌 Recentes</button>
+        <button>💬 Sem resposta</button>
+        <button>➕ Nova Discussão</button>
+      </div>
+
+      <div class="post">
+        <div>
+          <span class="author">
+            <img src="../imgs/Baiano.jpeg" alt="Avatar Baiano">
+            Baiano
+          </span>
+          
+          <span class="timestamp">
+             • 21 minutos atrás
+          </span>
+        </div>
+        
+        <div class="post-title">
+          Erro autenticação consumo api javascript fetch
+        </div>
+
+        <div class="post-text">Eae guys <br><br>
+          Fiz um teste no postman para consumir uma api e deu tudo certo<br>
+          no entanto jogando para o fetch do javascript da erro de autorização 401<br><br>
+          O código que estou usando é esse ficarei muito grato se alguém puder me dar uma luz <br><br>
+          ...
+        </div>
+
+        <div class="tags">
+          <span>javascript</span>
+        </div>
+        
+        <div class="reactions">
+          <div>👍 9</div>
+          <div>💬 4</div>
+        </div>
+
+        <a href="forum_interno_comentario.html">
+          <button class="respostas-button">Respostas</button>
+        </a>
+
+      </div>
+
+      <div class="post">
+        <div>
+          <span class="author">
+            <img src="../imgs/Alex.jpeg" alt="Avatar Alex">
+            Alex
+          </span>
+          
+          <span class="timestamp">
+             • 45 minutos atrás
+          </span>
+        </div>
+        
+        <div class="post-title">
+          Estou com uma dúvida em um código JavaScript
+        </div>
+
+        <div class="post-text">
+          Olá, pessoal. Estou estudando JavaScript e estou fazendo uma atividade prática, mas estou com um pouco de dificuldade
+           no código. Segue abaixo.<br>var bebida = "café"; ...
+        </div>
+        
+        <div class="tags">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="reactions">
+          <div>👍 3</div>
+          <div>💬 1</div>
+        </div>
+
+      </div>
+    </main>
+    
+  </body>
+
 </html>

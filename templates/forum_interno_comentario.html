@@ -1,113 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiveDev - Visualização da Pergunta</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/forum.css">
-</head>
-<body>
-  <aside>
-    <h1><span>Live</span>Dev</h1>
-    <nav>
-      <a href="tela_dev.html">🏠 página inicial</a>
-      <div>LIVE CODING</div>
-      <a href="live.html">📡 Sessões ao Vivo</a>
-      <div>FÓRUNS</div>
-      <a href="forum_interno.html" class="active" style="color: #2a6ef0; font-weight: bold;">👥 Fórum Interno</a>
-      <a href="forum_publico.html">🌐 Fórum Público</a>
-    </nav>
-  </aside>
-  <main>
-    <div class="top-bar">
-      <input class="search-input" type="text" placeholder="Pesquisar no fórum...">
-      <div class="user-info">
-        <div>
-          <div><strong>Luiz</strong></div>
-          <div style="font-size: 14px; color: #555;">Estagiario</div>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LiveDev - Visualização da Pergunta</title>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../styles/forum.css">
+  </head>
+
+  <body>
+
+    <aside>
+      <h1><span>Live</span>Dev</h1>
+      
+      <nav>
+        <a href="tela_dev.html">🏠 página inicial</a>
+        <div>LIVE CODING</div>
+        <a href="live.html">📡 Sessões ao Vivo</a>
+        
+        <div>FÓRUNS</div>
+        
+        <a href="forum_interno.html" class="active" style="color: #2a6ef0; font-weight: bold;">👥 Fórum Interno</a>
+        <a href="forum_publico.html">🌐 Fórum Público</a>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="top-bar">
+        <input class="search-input" type="text" placeholder="Pesquisar no fórum...">
+
+        <div class="user-info">
+          <div>
+            <div>
+              <strong>Luiz</strong>
+            </div>
+
+            <div style="font-size: 14px; color: #555;">Estagiario</div>
+          </div>
+
+          <img src="../imgs/Luiz.jpg" alt="Avatar">
         </div>
-        <img src="../imgs/Luiz.jpg" alt="Avatar">
-      </div>
-    </div>
 
-    <div class="post">
-      <div><span class="author">
-      <img src="../imgs/Baiano.jpeg" alt="Avatar Baiano">
-      Baiano</span><span class="timestamp"> • 21 minutos atrás</span></div>
-      <div class="post-title">Erro autenticação consumo api javascript fetch</div>
-      <div class="post-text">Eae guys<br><br>
-        Fiz um teste no postman para consumir uma api e deu tudo certo<br>
-        no entanto jogando para o fetch do javascript da erro de autorização 401<br><br>
-        O código que estou usando é esse ficarei muito grato se alguém puder me dar uma luz
-      </div>
-      <pre>
-var myHeaders = new Headers();
-myHeaders.append("Authorization", "Basic ZXhjZWxlbmNpYXd1I10aGlhZ286Zm1qQ3gxVTVoSGlMTEVERzBLVk82cWRKdWVTTmUxeDU=");
-
-var raw = "";
-
-var requestOptions = {
-  method: "GET",
-  headers: myHeaders,
-  mode: "no-cors",
-  //body: raw,
-  redirect: "follow"
-};
-
-fetch("https://api.sienge.com.br/excelenciaweb/public/api/v1/bills/?startDate=2018-01-01&endDate=2023-12-31&limit=400&offset=200", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log("error", error));
-      </pre>
-      <div class="tags"><span>JavaScript</span></div>
-      <div class="reactions">
-        <div>👍 9</div>
-        <div>💬 4</div>
-      </div>
-    </div>
-    <div class="awnsers">
-    <span>Respostas</span>
-    </div>
-
-    <div class="post" style="background-color: #f9fafc;">
-      <div><span class="author">
-      <img src="../imgs/Luiz.jpg" alt="Avatar Baiano" class="avatar">
-      Luiz</span><span class="timestamp"> • agora mesmo</span></div>
-      <div class="post-text">
-        Opa Baiano, esse erro 401 geralmente é por autenticação mal configurada mesmo.<br><br>
-
-        Pelo que vi, você tá usando <code>Authorization: Basic ...</code>, que espera um base64 de usuário:senha.
-        Mas essa API do Sienge normalmente usa <code>Bearer token</code>, então troca isso.
       </div>
 
-      <pre>
-var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer SEU_TOKEN_AQUI");
+      <div class="post">
 
-var requestOptions = {
-  method: "GET",
-  headers: myHeaders,
-  redirect: "follow"
-};
+        <div>
+          <span class="author">
+            <img src="../imgs/Baiano.jpeg" alt="Avatar Baiano">
+              Baiano
+          </span>
 
-fetch("https://api.sienge.com.br/excelenciaweb/public/api/v1/bills/?startDate=2018-01-01&endDate=2023-12-31&limit=400&offset=200", requestOptions)
-  .then(response => response.json())
-  .then(result => console.log(result))
-  .catch(error => console.log("error", error));
-      </pre>
+          <span class="timestamp">
+            • 21 minutos atrás
+          </span>  
+        </div>
+        
+        <div class="post-title">
+          Erro autenticação consumo api javascript fetch
+        </div>
+        
+        <div class="post-text">
+          Eae guys<br><br>
+          Fiz um teste no postman para consumir uma api e deu tudo certo<br>
+          no entanto jogando para o fetch do javascript da erro de autorização 401<br><br>
+          O código que estou usando é esse ficarei muito grato se alguém puder me dar uma luz
+        </div>
 
-      <div class="post-text">
-        E outro detalhe importante: você usou <code>mode: \"no-cors\"</code>, e isso impede o JS de acessar a resposta do servidor.
-        Remove essa opção e usa o modo padrão pra poder ler os dados corretamente.
+        <pre>
+          var myHeaders = new Headers();
+          myHeaders.append("Authorization", "Basic ZXhjZWxlbmNpYXd1I10aGlhZ286Zm1qQ3gxVTVoSGlMTEVERzBLVk82cWRKdWVTTmUxeDU=");
+
+          var raw = "";
+
+          var requestOptions = {
+            method: "GET",
+            headers: myHeaders,
+            mode: "no-cors",
+            //body: raw,
+            redirect: "follow"
+          };
+
+          fetch("https://api.sienge.com.br/excelenciaweb/public/api/v1/bills/?startDate=2018-01-01&endDate=2023-12-31&limit=400&offset=200", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log("error", error));
+        </pre>
+
+        <div class="tags">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="reactions">
+          <div>👍 9</div>
+          <div>💬 4</div>
+        </div>
+
       </div>
 
-      <div class="reactions">
-        <div>👍 3</div>
-        <button class="responder-button">Responder</button>
+      <div class="awnsers">
+        <span>Respostas</span>
       </div>
-    </div>
 
-  </main>
-</body>
+      <div class="post" style="background-color: #f9fafc;">
+        
+        <div>
+          <span class="author">
+            <img src="../imgs/Luiz.jpg" alt="Avatar Baiano" class="avatar">
+            Luiz
+          </span>
+
+          <span class="timestamp">
+            • agora mesmo
+          </span>
+        </div>
+
+        <div class="post-text">
+          Opa Baiano, esse erro 401 geralmente é por autenticação mal configurada mesmo.<br><br>
+
+          Pelo que vi, você tá usando <code>Authorization: Basic ...</code>, que espera um base64 de usuário:senha.
+          Mas essa API do Sienge normalmente usa <code>Bearer token</code>, então troca isso.
+        </div>
+
+        <pre>
+          var myHeaders = new Headers();
+          myHeaders.append("Authorization", "Bearer SEU_TOKEN_AQUI");
+
+          var requestOptions = {
+            method: "GET",
+            headers: myHeaders,
+            redirect: "follow"
+          };
+
+          fetch("https://api.sienge.com.br/excelenciaweb/public/api/v1/bills/?startDate=2018-01-01&endDate=2023-12-31&limit=400&offset=200", requestOptions)
+            .then(response => response.json())
+            .then(result => console.log(result))
+            .catch(error => console.log("error", error));
+        </pre>
+
+        <div class="post-text">
+          E outro detalhe importante: você usou <code>mode: \"no-cors\"</code>, e isso impede o JS de acessar a resposta do servidor.
+          Remove essa opção e usa o modo padrão pra poder ler os dados corretamente.
+        </div>
+
+        <div class="reactions">
+          <div>👍 3</div>
+          <button class="responder-button">Responder</button>
+        </div>
+
+      </div>
+    </main>
+  
+  </body>
+
 </html>

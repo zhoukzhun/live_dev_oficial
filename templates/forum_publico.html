@@ -1,80 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiveDev - Fórum Público</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" >
-    <link rel="stylesheet" href="../styles/forum.css">
-</head>
-<body>
-  <aside>
-    <h1><span>Live</span>Dev</h1>
-    <nav>
-      <a href="tela_dev.html">🏠 página inicial</a>
-      <div>LIVE CODING</div>
-      <a href="live.html">📡 Sessões ao Vivo</a>
-      <div>FÓRUNS</div>
-      <a href="forum_interno.html">👥 Fórum Interno</a>
-      <a href="forum_publico.html" class="active" style="color: #2a6ef0; font-weight: bold;">🌐 Fórum Público</a>
-    </nav>
-  </aside>
-  <main>
-    <div class="top-bar">
-      <input class="search-input" type="text" placeholder="Pesquisar no fórum...">
-      <div class="user-info">
-        <div>
-          <div><strong>Luiz</strong></div>
-          <div style="font-size: 14px; color: #555;">Estagiario</div>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LiveDev - Fórum Público</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" >
+      <link rel="stylesheet" href="../styles/forum.css">
+  </head>
+
+  <body>
+    <aside>
+      <h1>
+        <span>Live</span>Dev
+      </h1>
+
+      <nav>
+        <a href="tela_dev.html">
+          🏠 página inicial
+        </a>
+
+        <div>LIVE CODING</div>
+
+        <a href="live.html">
+          📡 Sessões ao Vivo
+        </a>
+
+        <div>FÓRUNS</div>
+
+        <a href="forum_interno.html">
+          👥 Fórum Interno
+        </a>
+
+        <a href="forum_publico.html" class="active" style="color: #2a6ef0; font-weight: bold;">
+          🌐 Fórum Público
+        </a>
+      </nav>
+      
+    </aside>
+
+    <main>
+      <div class="top-bar">
+        <input class="search-input" type="text" placeholder="Pesquisar no fórum...">
+        
+        <div class="user-info">
+          <div>
+            <div><strong>Luiz</strong></div>
+            <div style="font-size: 14px; color: #555;">Estagiario</div>
+          </div>
+
+          <img src="../imgs/Luiz.jpg" alt="Avatar">
         </div>
-        <img src="../imgs/Luiz.jpg" alt="Avatar">
-      </div>
-    </div>
-    <div class="forum-banner">
-      <strong>Fórum Público</strong><br>
-      Discuta tópicos de programação, compartilhe conhecimento e tire suas dúvidas
-    </div>
-    <div class="tabs">
-      <button class="active">📌 Recentes</button>
-      <button>💬 Sem resposta</button>
-      <button>➕ Nova Discussão</button>
-    </div>
 
-    <div class="post">
-      <div><span class="author">
-      <img src="../imgs/Zhou.jpeg" alt="Avatar Zhou">
-      Zhou</span><span class="timestamp"> • 21 minutos atrás</span></div>
-      <div class="post-title">Qual a melhor abordagem para microserviços em Node.js?</div>
-      <div class="post-text">Olá comunidade! Estou planejando a arquitetura de um novo projeto e gostaria de opiniões sobre a implementação de microserviços usando Node.js. Quais frameworks vocês recomendam e quais são as melhores práticas para comunicação entre serviços?</div>
-      <div class="tags">
-        <span>Node.js</span>
-        <span>Microserviços</span>
-        <span>Arquitetura</span>
       </div>
-      <div class="reactions">
-        <div>👍 4</div>
-        <div>💬 3</div>
-      </div>
-    </div>
 
-    <div class="post">
-      <div><span class="author">
-      <img src="../imgs/Nagata.jpeg" alt="Avatar Nagata">
-      Nagata</span><span class="timestamp"> • 45 minutos atrás</span></div>
-      <div class="post-title">Estou com uma dúvida em um código JavaScript</div>
-      <div class="post-text">Pessoal, estou com um problema chato no React. Quando tento atualizar o estado usando useState, a interface não reflete as mudanças imediatamente. Alguém já passou por isso?<br>
-        const [count, setCount] = useState(0);<br>
-        setCount(count + 1); // Não atualiza na primeira vez</div>
-      <div class="tags">
-        <span>React</span>
-        <span>JavaScript</span>
-        <span>Frontend</span>
+      <div class="forum-banner">
+        <strong>Fórum Público</strong><br>
+        Discuta tópicos de programação, compartilhe conhecimento e tire suas dúvidas
       </div>
-      <div class="reactions">
-        <div>👍 9</div>
-        <div>💬 4</div>
+
+      <div class="tabs">
+        <button class="active">📌 Recentes</button>
+        <button>💬 Sem resposta</button>
+        <button>➕ Nova Discussão</button>
       </div>
-    </div>
-  </main>
-</body>
+
+      <div class="post">
+        <div>
+          <span class="author">
+            <img src="../imgs/Zhou.jpeg" alt="Avatar Zhou">Zhou
+          </span>
+          
+          <span class="timestamp">
+             • 21 minutos atrás
+          </span>
+        </div>
+        
+        <div class="post-title">
+          Qual a melhor abordagem para microserviços em Node.js?
+        </div>
+
+        <div class="post-text">
+          Olá comunidade! Estou planejando a arquitetura de um novo projeto e gostaria de opiniões sobre a implementação
+           de microserviços usando Node.js. Quais frameworks vocês recomendam e quais são as melhores
+            práticas para comunicação entre serviços?
+        </div>
+        
+        <div class="tags">
+          <span>Node.js</span>
+          <span>Microserviços</span>
+          <span>Arquitetura</span>
+        </div>
+
+        <div class="reactions">
+          <div>👍 4</div>
+          <div>💬 3</div>
+        </div>
+
+      </div>
+
+      <div class="post">
+        <div>
+          <span class="author">
+            <img src="../imgs/Nagata.jpeg" alt="Avatar Nagata">Nagata
+          </span>
+          
+          <span class="timestamp">
+             • 45 minutos atrás
+          </span>
+        </div>
+        
+        <div class="post-title">
+          Estou com uma dúvida em um código JavaScript
+        </div>
+
+        <div class="post-text">
+          Pessoal, estou com um problema chato no React. Quando tento atualizar o estado usando useState, 
+          a interface não reflete as mudanças imediatamente. Alguém já passou por isso?<br>const [count, setCount] = useState(0);<br>
+          setCount(count + 1); // Não atualiza na primeira vez
+        </div>
+        
+        <div class="tags">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>Frontend</span>
+        </div>
+        
+        <div class="reactions">
+          <div>👍 9</div>
+          <div>💬 4</div>
+        </div>
+
+      </div>
+    </main>
+
+  </body>
+
 </html>

@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiveDev - Cadastro</title>
-    <link rel="stylesheet" href="../styles/cadastro.css">
-</head>
-<body>
-    <div class="app-container">
-        <div class="form-container">
-            <h1>Cadastro LiveDev</h1>
-            
-            <form id="cadastroForm">
-                <div class="input-group">
-                    <label>Nome</label>
-                    <input type="text" id="nome" placeholder="Digite o seu nome" required>
-                </div>
-                
-                <div class="input-group">
-                    <label>E-mail</label>
-                    <div class="email-field">
-                        <input type="text" id="email" placeholder="Digitar email" required>
-                    </div>
-                </div>
-                
-                <div class="input-group">
-                    <label>Senha</label>
-                    <input type="password" id="senha" placeholder="Digite a sua senha" required>
-                </div>
-                
-                <div class="input-group">
-                    <label>Confirmar Senha</label>
-                    <input type="password" id="confirmarSenha" placeholder="Confirmar a senha" required>
-                </div>
-                
-                <div class="input-group">
-                    <label>Empresa</label>
-                    <input type="text" id="empresa" placeholder="Empresa em que trabalha" required>
-                </div>
-                
-                <button type="submit" class="submit-button">ENVIAR</button>
-            </form>
-        </div>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LiveDev - Cadastro</title>
+        <link rel="stylesheet" href="../styles/cadastro.css">
+    </head>
 
-    <script>
-        document.getElementById('cadastroForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+    <body>
+
+        <div class="app-container">
+            <div class="form-container">
+                <h1>Cadastro LiveDev</h1>
+                
+                <form id="cadastroForm">
+                    <div class="input-group">
+                        <label>Nome</label>
+                        <input type="text" id="nome" placeholder="Digite o seu nome" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>E-mail</label>
+                        <div class="email-field">
+                            <input type="text" id="email" placeholder="Digitar email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Senha</label>
+                        <input type="password" id="senha" placeholder="Digite a sua senha" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Confirmar Senha</label>
+                        <input type="password" id="confirmarSenha" placeholder="Confirmar a senha" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Empresa</label>
+                        <input type="text" id="empresa" placeholder="Empresa em que trabalha" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">ENVIAR</button>
+                </form>
+
+            </div>
             
-            // Obter valores dos campos
-            const nome = document.getElementById('nome').value;
-            const email = document.getElementById('email').value;
-            const senha = document.getElementById('senha').value;
-            const confirmarSenha = document.getElementById('confirmarSenha').value;
-            const empresa = document.getElementById('empresa').value;
-            
-            // Validações
-            if (nome.length < 3) {
-                alert('O nome deve ter pelo menos 3 caracteres!');
-                return;
-            }
-            
-            if (!email.includes('@') || !email.includes('.')) {
-                alert('Por favor, insira um e-mail válido!');
-                return;
-            }
-            
-            if (senha.length < 8) {
-                alert('A senha deve ter no mínimo 8 caracteres!');
-                return;
-            }
-            
-            if (senha !== confirmarSenha) {
-                alert('As senhas não coincidem!');
-                return;
-            }
-            
-            if (empresa.length < 2) {
-                alert('Por favor, informe o nome da empresa!');
-                return;
-            }
-            
-            // Se todas as validações passarem
-            alert('Cadastro realizado com sucesso! Redirecionando...');
-            window.location.href = "login.html";
-            
-            // Ou enviar os dados para um banco de dados
-            // this.submit();
-        });
-    </script>
-</body>
+        </div>
+
+        <script>
+            document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // Obter valores dos campos
+                const nome = document.getElementById('nome').value;
+                const email = document.getElementById('email').value;
+                const senha = document.getElementById('senha').value;
+                const confirmarSenha = document.getElementById('confirmarSenha').value;
+                const empresa = document.getElementById('empresa').value;
+                
+                // Validações
+                if (nome.length < 3) {
+                    alert('O nome deve ter pelo menos 3 caracteres!');
+                    return;
+                }
+                
+                if (!email.includes('@') || !email.includes('.')) {
+                    alert('Por favor, insira um e-mail válido!');
+                    return;
+                }
+                
+                if (senha.length < 8) {
+                    alert('A senha deve ter no mínimo 8 caracteres!');
+                    return;
+                }
+                
+                if (senha !== confirmarSenha) {
+                    alert('As senhas não coincidem!');
+                    return;
+                }
+                
+                if (empresa.length < 2) {
+                    alert('Por favor, informe o nome da empresa!');
+                    return;
+                }
+                
+                // Se todas as validações passarem
+                alert('Cadastro realizado com sucesso! Redirecionando...');
+                window.location.href = "login.html";
+                
+                // Ou enviar os dados para um banco de dados
+                // this.submit();
+            });
+        </script>
+        
+    </body>
+
 </html>
