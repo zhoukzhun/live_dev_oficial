@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
@@ -36,81 +36,63 @@
 
           <div class="profile">
             <div>
-              <strong>João Silva</strong><br>
+              <strong>👨‍💻 João Silva</strong><br>
               <span>Desenvolvedor Sênior</span>
             </div> 
           </div>
-
         </header>
 
-        <table class="dashboard">
+        <h2>Live Sessions 🔴</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tema da Live</th>
+              <th>Autor</th>
+              <th>Horário</th>
+              <th>Status</th>
+            </tr>
+          </thead>
           <tr>
-            <td class="live-sessions">
-              <h2>Live Sessions 🔴</h2>
-
-              <div class="card live">
-                <h3>
-                  Implementando Clean Architecture em React
-                </h3>
-
-                <p>
-                  👩 Ana Silva - TechCorp
-                </p>
-
-                <p>
-                  🕒 14:00 - 15:30
-                </p>
-
-                <button class="btn-watch">Assistir Agora (7 assistindo)</button>
-              </div>
-
-              <div class="card">
-                <h3>
-                  Debug em Produção: Melhores Práticas
-                </h3>
-
-                <p>
-                  👨 Carlos Oliveira - DevSolutions
-                </p>
-
-                <p>
-                  🕒 16:00 - 17:30
-                </p>
-
-                <button class="btn-lembrar">Lembrar</button>
-              </div>
-
-            </td>
-
-            <td class="recent-discussions">
-              <h2>Discussões Recentes</h2>
-
-              <div class="tab-links">
-                <a href="forum_interno.html" class="active">Internas</a> |
-                <a href="forum_publico.html">Públicas</a>
-              </div>
-
-              <div class="card internal">
-                <h3>Como vocês lidam com cache no React Query?</h3>
-                <p>👨 Pedro Alves - TechCorp • há 2 horas</p>
-                <p>💬 9 respostas • 👍 5 curtidas</p>
-              </div>
-
-              <div class="card public">
-                <h3>Melhores práticas para testes em React</h3>
-                <p>👩 Julia Costa - DevSolutions • há 4 horas</p>
-                <p>💬 12 respostas • 👍 9 curtidas</p>
-              </div>
-
-            </td>
-
+            <td>Implementando Clean Architecture em React</td>
+            <td>👩 Ana Silva - TechCorp</td>
+            <td>14:00 - 15:30</td>
+            <td><button class="btn btn-watch">Assistir Agora (7 assistindo)</button></td>
           </tr>
-
+          <tr>
+            <td>Debug em Produção: Melhores Práticas</td>
+            <td>👨 Carlos Oliveira - DevSolutions</td>
+            <td>16:00 - 17:30</td>
+            <td><button class="btn btn-lembrar">Lembrar</button></td>
+          </tr>
         </table>
 
-      </main>    
+        <h2>Discussões Recentes</h2>
+        <p><a href="forum_interno.html">Internas</a> | <a href="forum_publico.html">Públicas</a></p>
+        <table>
+          <thead>
+            <tr>
+              <th>Título da Discussão</th>
+              <th>Autor</th>
+              <th>Tempo</th>
+              <th>Interações</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Como vocês lidam com cache no React Query?</td>
+            <td>👨 Pedro Alves - TechCorp</td>
+            <td>há 2 horas</td>
+            <td>💬 9 respostas • 👍 5 curtidas</td>
+          </tr>
+          <tr>
+            <td>Melhores práticas para testes em React</td>
+            <td>👩 Julia Costa - DevSolutions</td>
+            <td>há 4 horas</td>
+            <td>💬 12 respostas • 👍 9 curtidas</td>
+          </tr>
+        </table>
+
+      </main>
     </div>
 
   </body>
-
 </html>
